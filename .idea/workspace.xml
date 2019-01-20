@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca36b18b-bb2c-445b-9f06-d83b647600bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ClassScrap.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CourseCleaner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpaceCut.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/URL from list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stringCut.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic web-scraping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpaceCut.py" beforeDir="false" afterPath="$PROJECT_DIR$/SpaceCut.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/URL from list.py" beforeDir="false" afterPath="$PROJECT_DIR$/URL from list.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/URL from list.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
-              <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <caret line="4" column="30" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -51,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SpaceCut.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="176">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -320,10 +315,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/URL from list.py">
+    <entry file="file://$PROJECT_DIR$/CourseCleaner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        <state relative-caret-position="198">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -334,17 +329,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CourseCleaner.py">
+    <entry file="file://$PROJECT_DIR$/URL from list.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="88">
+          <caret line="4" column="30" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SpaceCut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>

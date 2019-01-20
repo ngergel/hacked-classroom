@@ -1,6 +1,6 @@
 def SpaceCut(string):
     for i in range(len(string)):
-        if string[i] == " ":
+        if char in string == " ":
             cutlocation = i
             print(cutlocation)
             break
