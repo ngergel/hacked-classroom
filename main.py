@@ -47,7 +47,7 @@ def main():
 	# Populate the above list.
 	for i in master.keys():
 		for j in master[i]:
-			if (given_day == j[0] and time_compare(given_time, j[1], j[2])):
+			if given_day == j[0] and time_compare(given_time, j[1], j[2]):
 				filled_rooms.append(i)
 
 	# Even if they are not filled, add rooms not in the building specified
