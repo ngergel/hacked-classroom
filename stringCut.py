@@ -1,7 +1,7 @@
 def stringCut(container):
 
     def findSpace(containername):
-        for i in range(len(container)):
+        for i in range(len(containername)):
             if containername[i] == " ":
                 return i
 
@@ -17,15 +17,18 @@ def stringCut(container):
     startTime = container2[0:index2]
     container3 = container2[index2:]
 
-    print("Day of week is: " + dayOfWeek)
-    print("start time is: " + startTime)
+    if dayOfWeek[0] not in 'MTWRF':
+        return None
+
+    # print("Day of week is: " + dayOfWeek)
+    # print("start time is: " + startTime)
 
     # isolating endtime
     endtime = container3[2:11]
-    print("end time is: " + endtime)
+    # print("end time is: " + endtime)
 
     room = container3[12:-5]
-    print("room is located: " + room)
+    # print("room is located: " + room)
 
     roomtuple = [dayOfWeek, startTime, endtime, room]
 
