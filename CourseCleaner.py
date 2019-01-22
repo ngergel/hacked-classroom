@@ -51,12 +51,11 @@ exec('actual_list = '+proper_list)
 finalurllist = URLfromlist(actual_list)
 # print(finalurllist)
 
+totalcourses = len(finalurllist)
 
 
-
-
-
-for myUrl in finalurllist:
+numberofcourses = 0
+for myUrl in finalurllist[0:100]:
 
     #opens the url and stores in into page_html
     try:
@@ -71,34 +70,35 @@ for myUrl in finalurllist:
 
     #grabs each part
     containers = page_soup.findAll("div", {"class": "claptrap-class"})
+    containerslength = len(containers)
 
-    #we're just looking at the first container
-    try:
-        container = str(containers[0].em)
-    except IndexError:
-        continue
+#iterates through all the containers for data
+    for i in range(0,containerslength):
+        try:
+            container = str(containers[i].em)
+        except IndexError:
+            continue
 
-    if str(containers[0].h3).split()[4] != '2019':
-        continue
+        if str(containers[0].h3).split()[4] != '2019':
+            continue
 
-    #calls the Function that return day of week, start time, end time, and room number and splits the list
-    temp = stringCut(container)
+        #calls the Function that return day of week, start time, end time, and room number and splits the list
+        temp = stringCut(container)
 
-    if temp == None:
-        continue
+        if temp == None:
+            continue
 
-    templocation = str(temp.pop())
+        templocation = str(temp.pop())
 
-    if templocation not in MasterDictionary:
-        MasterDictionary[templocation] = [temp]
-    else:
-        MasterDictionary[templocation].append(temp)
-
-
+        if templocation not in MasterDictionary:
+            MasterDictionary[templocation] = [temp]
+        else:
+            MasterDictionary[templocation].append(temp)
     print(myUrl)
-    # print(MasterDictionary)
-print(MasterDictionary)
+    numberofcourses = numberofcourses +1
+    print(str(numberofcourses) + '/' + str(totalcourses))
 
-f = open('master_dict.txt', 'w')
+
+f = open('newmaster_dict.txt', 'w')
 f.write(str(MasterDictionary))
 f.close()
