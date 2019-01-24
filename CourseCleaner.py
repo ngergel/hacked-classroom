@@ -48,8 +48,9 @@ exec('actual_list = '+proper_list)
 #final_url_list = URLfromlist(actual_list)
 #print(final_url_list)
 
-finalurllist = URLfromlist(actual_list)
+#finalurllist = URLfromlist(actual_list)
 # print(finalurllist)
+finalurllist = ['https://catalogue.ualberta.ca/Course/Details?subjectCode=EN%20PH&catalog=131']
 
 totalcourses = len(finalurllist)
 
