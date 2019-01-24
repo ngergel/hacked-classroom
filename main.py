@@ -28,7 +28,6 @@ from time_calc import time_compare
 
 f = open('newmaster_dict.txt', 'r')
 data = f.read()
-print(data)
 exec('master = '+data)
 
 # Introduction and getting user input.
