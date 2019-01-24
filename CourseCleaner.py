@@ -5,8 +5,8 @@ from stringCut import stringCut
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as soup
 from time import sleep
-MasterDictionary = dict()
 
+MasterDictionary = dict()
 
 valid_chars=ascii_letters+digits+' -"[],'
 
