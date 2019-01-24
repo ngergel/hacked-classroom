@@ -80,7 +80,7 @@ for myUrl in finalurllist[0:totalcourses]:
         except IndexError:
             continue
 
-        if str(containers[0].h3).split()[4] != '2019':
+        if str(containers[i].h3).split()[4] != '2019' and str(containers[i].h3).split()[2] != 'Winter':
             continue
 
         #calls the Function that return day of week, start time, end time, and room number and splits the list

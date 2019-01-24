@@ -26,7 +26,7 @@ from time_calc import time_compare
 # 	'(CCIS L1 171)': [['W', '16:00:00','16:50:00'], ['F', '11:00:00', '12:50:00']]
 # }
 
-f = open('master_dict.txt', 'r')
+f = open('newmaster_dict.txt', 'r')
 data = f.read()
 exec('master = '+data)
 
