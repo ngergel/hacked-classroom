@@ -54,8 +54,9 @@ finalurllist = URLfromlist(actual_list)
 totalcourses = len(finalurllist)
 
 
-numberofcourses = 0
-for myUrl in finalurllist[0:100]:
+
+coursenum = 0
+for myUrl in finalurllist[0:totalcourses]:
 
     #opens the url and stores in into page_html
     try:
@@ -95,8 +96,8 @@ for myUrl in finalurllist[0:100]:
         else:
             MasterDictionary[templocation].append(temp)
     print(myUrl)
-    numberofcourses = numberofcourses +1
-    print(str(numberofcourses) + '/' + str(totalcourses))
+    coursenum = coursenum   +1
+    print(str(coursenum) + '/' + str(totalcourses))
 
 
 f = open('newmaster_dict.txt', 'w')
