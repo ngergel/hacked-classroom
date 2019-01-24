@@ -2,12 +2,17 @@ f = open('newmaster_dict.txt', 'r')
 data = f.read()
 exec('master = '+data)
 
-roomdel = input("What room do you want to delete?")
+g = open('naughtylist.txt', 'r')
+naughtydata = g.read()
+exec('naughtylist = ' +naughtydata)
 
-try:
-    del master['(' + roomdel + ')']
-except KeyError:
-    print("Key" + roomdel + "was not found")
+for naughty in naughtylist:
+    try:
+        del master['(' + naughty + ')']
+        print(naught + " was DELETED!")
+    except KeyError:
+        print(naughty + " was not found")
+
 
 
 f = open('newmaster_dict.txt', 'w')
